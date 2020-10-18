@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import './global.css'
-import BadgeNew from './pages/BadgeNew';
+import App from './components/App';
 
 // const name = 'Tonio';
 // const element =React.createElement('a',{href: 'https://Platzi.com'},`${name} has learned thanks to Platzi`);//This is JSX
@@ -20,5 +20,5 @@ import BadgeNew from './pages/BadgeNew';
 
 const container = document.getElementById('app');
 
-ReactDOM.render(<BadgeNew/>, container); // --> Badge is a class so make sure to put </> that indicates it's an element;
+ReactDOM.render(<App/>, container); // --> Badge is a class so make sure to put </> that indicates it's an element;
 //render parameters: (from, to);

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styles/BadgeNew.css'
 import header from '../img/logo.png'
-import Navbar from '../components/Navbar';
+// import Navbar from '../components/Navbar';
 import Badge from '../components/Badge';
 import BadgeForm from '../components/BadgeForm';
 
@@ -31,8 +31,7 @@ class BadgeNew extends React.Component{
   render(){
     //Now we want to update the information from the inputs into the Badge section
     return(
-      <div>
-        <Navbar/>
+      <React.Fragment>
         <div className="BadgeNew__hero">
           <img className="img-fluid" src={header} alt="Logo"/>
         </div>
@@ -52,7 +51,7 @@ class BadgeNew extends React.Component{
             </div>
           </div>
         </div>
-      </div>
+      </React.Fragment>
     )
   }
 }
